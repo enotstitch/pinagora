@@ -1,32 +1,40 @@
 .hero {
 	&__title {
+		@include adaptive-font(94, 36);
 		margin: 0;
 		margin-bottom: 20px;
 		font-weight: 500;
-		font-size: 94px;
 		text-align: center;
+
+		@media (max-width: 768px) {
+			margin-bottom: 5px;
+		}
 	}
 
 	&__text {
+		@include adaptive-font(44, 18);
 		margin: 0 auto;
 		margin-bottom: 60px;
 		max-width: 860px;
 		font-weight: 400;
-		font-size: 44px;
 		text-align: center;
+
+		@media (max-width: 768px) {
+			margin-bottom: 35px;
+		}
 	}
 
-	&__images {
+	&-images {
 		display: flex;
 		gap: 25px;
 		justify-content: center;
 
-		img {
-			object-fit: none;
+		&__item:last-child {
+			padding-top: 85px;
+		}
 
-			&:last-child {
-				padding-top: 85px;
-			}
+		@media (max-width: 768px) {
+			gap: 10px;
 		}
 	}
 }
