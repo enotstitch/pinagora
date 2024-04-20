@@ -1,0 +1,58 @@
+.problems {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 100px 40px;
+
+		@media (max-width: 768px) {
+			gap: 30px;
+		}
+	}
+}
+
+.problem {
+	position: relative;
+	padding-left: 70px;
+	max-width: 520px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 39px;
+		height: 40px;
+		background-image: url('@img/problems/house.svg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		rotate: 20deg;
+
+		@media (max-width: 768px) {
+			width: 26px;
+			height: 27px;
+		}
+	}
+
+	&__title {
+		@include adaptive-font(44, 24);
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 500;
+		line-height: 105%;
+		color: var(--second-color);
+	}
+
+	&__text {
+		@include adaptive-font(20, 16);
+		margin: 0;
+		font-weight: 300;
+		line-height: 125%;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0;
+		padding-top: 55px;
+		max-width: 100%;
+	}
+}
