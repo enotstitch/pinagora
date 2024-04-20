@@ -1,6 +1,6 @@
 .header {
 	width: 100%;
-	background-color: var(--bg-color);
+	background-color: transparent;
 
 	&__container {
 		display: flex;
@@ -15,6 +15,12 @@
 	&__logo {
 		z-index: 5;
 		display: block;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 50px;
 	}
 
 	&.fixed {
@@ -37,7 +43,7 @@
 	}
 
 	&__item {
-		margin-right: 20px;
+		margin-right: 40px;
 
 		&:last-child {
 			margin: 0;
@@ -47,7 +53,7 @@
 	&__link {
 		@include adaptive-font(18, 16);
 		position: relative;
-		color: var(--light-color);
+		color: var(--dark-color);
 
 		&::after {
 			content: '';
