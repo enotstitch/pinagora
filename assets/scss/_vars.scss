@@ -2,9 +2,14 @@
 $container-width: 1790;
 
 :root {
+	// * Fonts
+	--font-family: 'Radio Canada', sans-serif;
+
 	// * Colors
-	--dark-color: #000;
-	--light-color: #fff;
+	--dark-color: #4f4f4f;
+	--light-color: #fafafa;
+	--white-color: #fafafa;
 	--bg-color: #e27d5f;
-	--accent-color: #9fd4ff;
+	--accent-color: #39b7ff;
+	--second-color: #0a8ed9;
 }
