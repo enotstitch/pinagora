@@ -41,7 +41,6 @@
 
 		@media (max-width: 768px) {
 			padding: 10px 0;
-			padding-right: 40px;
 		}
 	}
 
@@ -59,6 +58,8 @@
 	}
 
 	&__icon {
+		flex-shrink: 0;
+		margin-left: 20px;
 		width: 12px;
 		height: 7px;
 		transition: all 0.3s;
