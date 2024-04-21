@@ -4,11 +4,23 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto auto;
 		gap: 40px;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
 	}
 }
 
 .app-card {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
 	overflow: hidden;
 	border-radius: 20px;
 	padding: 30px 40px 0;
@@ -37,6 +49,10 @@
 
 	&__img {
 		width: fit-content;
+
+		img {
+			display: block;
+		}
 	}
 
 	&__text {
@@ -50,6 +66,10 @@
 
 	&--shadow-none {
 		box-shadow: none;
+	}
+
+	@media (max-width: 768px) {
+		margin: 0 auto;
 	}
 }
 
@@ -91,6 +111,10 @@
 .card-text {
 	&::after {
 		display: none;
+	}
+
+	@media (max-width: 768px) {
+		grid-row-start: 3;
 	}
 }
 
