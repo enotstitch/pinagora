@@ -3,11 +3,15 @@
 	max-width: 1160px;
 
 	&__item {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		background-color: transparent;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
 		}
 	}
 
