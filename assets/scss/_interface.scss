@@ -22,10 +22,17 @@
 
 .link {
 	display: inline-block;
+	border: 2px solid var(--accent-color);
 	border-radius: 30px;
-	padding: 7px 60px;
+	padding: 10px 60px;
 	color: var(--white-color);
 	background-color: var(--accent-color);
+	transition: all 0.3s;
+
+	&:hover {
+		color: var(--accent-color);
+		background-color: transparent;
+	}
 
 	@media (max-width: 768px) {
 		width: 100%;
