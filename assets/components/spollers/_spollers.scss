@@ -18,6 +18,9 @@
 	&__title {
 		@include adaptive-font(28, 24);
 		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		padding: 20px 15px;
 		padding-right: 40px;
 		width: 100%;
@@ -36,20 +39,20 @@
 			background-color: var(--second-color);
 		}
 
-		&::after {
-			content: '';
-			position: absolute;
-			right: 20px;
-			top: 50%;
-			width: 12px;
-			height: 7px;
-			background-image: url('@img/icons/sprite.svg#arrow');
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			transform: translateY(-50%);
-			transition: transform 0.3s ease 0s;
-		}
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	right: 20px;
+		// 	top: 50%;
+		// 	width: 12px;
+		// 	height: 7px;
+		// 	background-image: url('@img/icons/sprite.svg#arrow');
+		// 	background-position: center;
+		// 	background-size: cover;
+		// 	background-repeat: no-repeat;
+		// 	transform: translateY(-50%);
+		// 	transition: transform 0.3s ease 0s;
+		// }
 
 		@media (max-width: 768px) {
 			padding: 10px 0;
@@ -70,11 +73,25 @@
 		}
 	}
 
+	&__icon {
+		width: 12px;
+		height: 7px;
+		transition: all 0.3s;
+
+		use {
+			fill: var(--dark-color);
+		}
+	}
+
 	&.init .spollers__title.active {
 		color: var(--second-color);
 
-		&::after {
+		.spollers__icon {
 			transform: rotate(-180deg);
+
+			use {
+				fill: var(--accent-color);
+			}
 		}
 	}
 }
