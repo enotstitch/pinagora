@@ -29,8 +29,10 @@
 		gap: 25px;
 		justify-content: center;
 
-		&__item:last-child {
-			padding-top: 85px;
+		&__item {
+			&:last-child {
+				padding-top: 85px;
+			}
 		}
 
 		@media (max-width: 768px) {
