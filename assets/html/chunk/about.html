@@ -30,9 +30,24 @@
 				</a>
 			</div>
 			<div class="about__images">
-				<div class="about__img" style="background-image: url('@img/about/about-img-1.jpg');"></div>
-				<div class="about__img" style="background-image: url('@img/about/about-img-2.jpg');"></div>
-				<div class="about__img" style="background-image: url('@img/about/about-img-3.jpg');"></div>
+				<div class="about__img">
+					<picture>
+						<source type="image/webp" data-srcset="@img/about/about-img-1.webp">
+						<img class="lazyload" alt="" data-src="@img/about/about-img-1.jpg">
+					</picture>
+				</div>
+				<div class="about__img">
+					<picture>
+						<source type="image/webp" data-srcset="@img/about/about-img-2.webp">
+						<img class="lazyload" alt="" data-src="@img/about/about-img-2.jpg">
+					</picture>
+				</div>
+				<div class="about__img">
+					<picture>
+						<source type="image/webp" data-srcset="@img/about/about-img-3.webp">
+						<img class="lazyload" alt="" data-src="@img/about/about-img-3.jpg">
+					</picture>
+				</div>
 			</div>
 		</div>
 	</div>
