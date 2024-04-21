@@ -2,21 +2,6 @@
 	padding: 55px 80px 120px;
 	background-color: var(--footer-bg);
 
-	.menu__body {
-		position: static;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 0;
-		text-align: center;
-		background-color: transparent;
-	}
-
-	.menu__item {
-		margin: 0;
-		margin-bottom: 20px;
-	}
-
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -59,6 +44,21 @@
 
 		.logo {
 			margin-bottom: 40px;
+		}
+
+		.menu__body {
+			position: static;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+			text-align: center;
+			background-color: transparent;
+		}
+
+		.menu__item {
+			margin: 0;
+			margin-bottom: 20px;
 		}
 	}
 }
