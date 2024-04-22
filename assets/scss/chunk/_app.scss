@@ -33,7 +33,7 @@
 		z-index: -1;
 		width: 250px;
 		height: 200px;
-		background-image: url('@img/app/app-bg.svg');
+		background-image: url('@img/icons/sprite.svg#logo');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -49,6 +49,7 @@
 
 	&__img {
 		width: fit-content;
+		filter: drop-shadow(0 0 30px rgb(0 0 0 / 50%));
 
 		img {
 			display: block;

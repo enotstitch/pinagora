@@ -9,8 +9,117 @@
 .section {
 	padding: 60px 0;
 
+	&-hero {
+		position: relative;
+		padding-top: 215px;
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 590px;
+			height: 1165px;
+			background-image: url('@img/hero/hero-bg.svg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.2;
+		}
+
+		&::before {
+			left: 0;
+			top: 0;
+
+			@media (max-width: 768px) {
+				top: 50%;
+				width: 370px;
+				height: 730px;
+				transform: translateY(-50%);
+			}
+
+			@media (max-width: 480px) {
+				left: 50%;
+				top: 0;
+				width: 165px;
+				height: 325px;
+				transform: translate(-50%, 25%);
+				rotate: 90deg;
+			}
+		}
+
+		&::after {
+			right: 0;
+			top: -250px;
+			transform: scale(1, -1);
+			rotate: 180deg;
+
+			@media (max-width: 1200px) {
+				display: none;
+			}
+		}
+	}
+
+	&-download {
+		position: relative;
+		overflow: hidden;
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 555px;
+			height: 440px;
+			background-image: url('@img/icons/sprite.svg#logo');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		&::before {
+			left: -150px;
+			rotate: 30deg;
+			bottom: -5px;
+		}
+
+		&::after {
+			right: -210px;
+			top: -60px;
+			rotate: 175deg;
+		}
+
+		@media (max-width: 1200px) {
+			&::after,
+			&::before {
+				width: 200px;
+				height: 160px;
+			}
+
+			&::before {
+				left: 30px;
+				bottom: 45px;
+			}
+
+			&::after {
+				right: 20px;
+				top: 20px;
+			}
+		}
+		@media (max-width: 768px) {
+			&::after,
+			&::before {
+				display: none;
+			}
+		}
+	}
+
 	@media (max-width: 768px) {
 		padding: 45px 0;
+
+		&-hero {
+			padding-top: 100px;
+		}
 	}
 }
 

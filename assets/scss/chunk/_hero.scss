@@ -28,6 +28,7 @@
 		display: flex;
 		gap: 25px;
 		justify-content: center;
+		filter: drop-shadow(0 0 30px rgb(0 0 0 / 50%));
 
 		&__item {
 			&:last-child {
