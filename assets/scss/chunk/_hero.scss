@@ -2,7 +2,7 @@
 	&__title {
 		@include adaptive-font(94, 36);
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 45px;
 		font-weight: 500;
 		text-align: center;
 
@@ -14,7 +14,7 @@
 	&__text {
 		@include adaptive-font(44, 18);
 		margin: 0 auto;
-		margin-bottom: 60px;
+		margin-bottom: 70px;
 		max-width: 860px;
 		font-weight: 400;
 		text-align: center;

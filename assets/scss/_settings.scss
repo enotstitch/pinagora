@@ -39,6 +39,10 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 	max-width: $container-width + px;
+
+	@media (max-width: 480px) {
+		padding: 0 10px;
+	}
 }
 
 img {
